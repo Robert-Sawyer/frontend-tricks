@@ -22,33 +22,28 @@
 }
 
 .section:nth-child(1) {
-    background: #ec681d url("pexels-adrianna-calvo-1596564.jpg");
+    background: #ec681d url("pexels-adrianna-calvo-1596564.jpg") fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .section:nth-child(2) {
-    background: #7db5d9 url("pexels-eberhard-grossgasteiger-1612357.jpg");
+    background: #7db5d9 url("pexels-eberhard-grossgasteiger-1612357.jpg") fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .section:nth-child(3) {
-    background: #c1e3c1 url("pexels-josa-busseck-4763552.jpg");
+    background: #c1e3c1 url("pexels-josa-busseck-4763552.jpg") fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .section:nth-child(4) {
-    background: #ecb048 url("pexels-pixabay-268533.jpg");
+    background: #ecb048 url("pexels-pixabay-268533.jpg") fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .section:nth-child(5) {
-    background: #c64cce url("pexels-snapwire-6992.jpg");
+    background: #c64cce url("pexels-snapwire-6992.jpg") fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .content {

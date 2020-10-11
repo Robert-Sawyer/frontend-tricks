@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-blend-mode: multiply;
+}
+
+.section:nth-child(1) {
+    background: #ec681d url("pexels-adrianna-calvo-1596564.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(2) {
+    background: #7db5d9 url("pexels-eberhard-grossgasteiger-1612357.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(3) {
+    background: #c1e3c1 url("pexels-josa-busseck-4763552.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(4) {
+    background: #ecb048 url("pexels-pixabay-268533.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(5) {
+    background: #c64cce url("pexels-snapwire-6992.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    max-width: 700px;
+}
+
+.content h2 {
+    background-color: #ffffff;
+    color: #111;
+    font-weight: 600;
+    font-size: 2em;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.content p {
+    background-color: #ffffff;
+    color: #111;
+    font-weight: 300;
+    padding: 10px 20px;
+    margin: 10px;
+}

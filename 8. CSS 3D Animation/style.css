@@ -29,8 +29,8 @@ body {
     border-radius: 50%;
     border: 15px solid #ffffff;
     animation: animate 7s ease-in-out infinite;
-    box-shadow: 0 10px 0 #efebed,
-                inset 0 10px 0 #ececec;
+    box-shadow: 0 10px 0 #827a7d,
+                inset 0 10px 0 #a78a8a;
     animation-delay: calc(-1s * var(--i));
 }
 

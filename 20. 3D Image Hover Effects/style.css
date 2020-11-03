@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.box {
+    position: relative;
+    background: #000000;
+    width: 248px;
+    height: 275px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.container:hover .box {
+    transform: rotateY(25deg);
+}
+
+.container .box:hover ~ .box {
+    transform: rotateY(-25deg);
+}
+
+.container .box:hover {
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #f01, #000);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+}
+
+.box:hover .imgBox::before {
+    opacity: 1;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    transform: translateY(200px);
+}
+
+.box:hover h2 {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+}
+
+p {
+    font-size: 14px;
+    color: #ffffff;
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+
+.box:hover p {
+    transform: translateY(0px);
+    transition-delay: 0.4s;
+}
+

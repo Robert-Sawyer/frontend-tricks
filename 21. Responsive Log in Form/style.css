@@ -95,3 +95,52 @@ img {
     font-weight: 500;
     cursor: pointer;
 }
+
+.inputBox input[type='submit']:hover {
+    background: #f53677;
+}
+
+.remember {
+    font-weight: 400;
+    font-size: 14px;
+    color: #607d8b;
+    margin-bottom: 10px;
+}
+
+.remember input {
+    margin-right: 3px;
+}
+
+.inputBox p {
+    color: #607d8b;
+}
+
+.inputBox p a {
+    color: #ff4584;
+}
+
+@media (max-width: 768px) {
+    .imgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contentBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .formBox {
+        width: 100%;
+        padding: 40px;
+        margin: 50px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+}

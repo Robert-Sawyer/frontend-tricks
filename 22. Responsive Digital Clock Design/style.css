@@ -21,7 +21,7 @@ section {
     align-items: center;
     width: 50%;
     height: 100%;
-    background: #000000;
+    background: linear-gradient(45deg, #81b7d2, #ffffff);
 }
 
 .sec h2 {
@@ -32,22 +32,24 @@ section {
 }
 
 .sec2 {
-    background: #d7fe3a;
+    background: linear-gradient(130deg, #d5a6af, #ffffff);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
+
 }
 
 .sec2 h2 {
-    color: #000000;
+    color: #ffffff;
     font-size: 30vw;
 }
 
 #ampm {
     position: absolute;
+    color: #ffffff;
     top: 40px;
     right: 40px;
     font-size: 6vw;

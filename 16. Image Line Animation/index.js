@@ -13,3 +13,8 @@ timeLine.fromTo(hero, 1, {height: '0%'}, {height: "80%", ease: Power2.easyInOut}
     .fromTo(hamburger, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, '-=0.5')
     .fromTo(headline, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, '-=0.5')
 
+//.fromTo(animowany element strony, czas trwaia animacji w sekundach, obiekt z właściwością/właściwościami
+//które chcę animować (np height) i ich początkowa wartość, potem obiekt z docelowymi wartościami animowanych
+//właściwości (można dodać też rodzaj animacji za pomocą ease:Power2......) i ewentualne opóżnienie lub
+//przyspieszenie animacji np jeśli chcę żeby animacja jednego elementu uruchomiła się wtym samym czasie co
+//poprzednia

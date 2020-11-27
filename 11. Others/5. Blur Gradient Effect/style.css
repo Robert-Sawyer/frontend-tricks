@@ -23,10 +23,11 @@ body {
 }
 
 .box h2 {
-    font-size: 2em;
+    font-size: 2.1em;
     color: #ffffff;
     position: relative;
     z-index: 2;
+    letter-spacing: 1px;
 }
 
 .box::before {

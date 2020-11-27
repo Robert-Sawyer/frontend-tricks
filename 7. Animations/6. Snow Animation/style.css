@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #000000 url("pexels-josh-hild-2422497.jpg") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}

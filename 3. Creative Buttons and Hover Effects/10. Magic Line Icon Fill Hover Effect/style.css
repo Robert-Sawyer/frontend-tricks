@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    overflow: hidden;
+}
+
+ul {
+    position: relative;
+    display: flex;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a .fa {
+    font-size: 6em;
+    color: #222222;
+}
+
+ul li::before {
+    font-family: FontAwesome,sans-serif;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 6em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 10px;
+}
+
+ul li:nth-child(1)::before {
+    content: '\f16a';
+    color: #dc143c;
+    border-bottom: 4px solid #dc143c;
+}
+
+ul li:nth-child(2)::before {
+    content: '\f16d';
+    color: #d514dc;
+    border-bottom: 4px solid #d514dc;
+}
+
+ul li:nth-child(3)::before {
+    content: '\f09b';
+    color: #fafafa;
+    border-bottom: 4px solid #fafafa;
+}
+
+ul li:nth-child(4)::before {
+    content: '\f232';
+    color: #21cb0f;
+    border-bottom: 4px solid #21cb0f;
+}
+
+ul li:nth-child(5)::before {
+    content: '\f08c';
+    color: #1435dc;
+    border-bottom: 4px solid #1435dc;
+}
+
+ul li:hover::before {
+    height: 100%;
+}
+

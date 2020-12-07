@@ -10,6 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #16384c;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -23,12 +25,12 @@ body {
 }
 
 .card {
+    position: relative;
     max-width: 300px;
-    height: 215px;
+    height: 240px;
     background-color: #ffffff;
     margin: 30px 10px;
     padding: 20px 15px;
-    position: relative;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 202px rgba(0,0,0,0.5);
@@ -39,19 +41,18 @@ body {
     height: 420px;
 }
 
-.imgBox {
+.card .imgBox {
     position: relative;
     width: 260px;
     height: 260px;
     top: -60px;
-    left: 20px;
+    left: 8px;
     z-index: 1;
-    display: contents;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .imgBox img {
-    max-width: 100%;
+    width: 260px;
     border-radius: 4px;
     height: 260px;
 }
@@ -60,7 +61,7 @@ body {
     position: relative;
     visibility: hidden;
     text-align: center;
-    margin-top: -140px;
+    margin-top: -120px;
     padding: 10px 15px;
     color: #111111;
     opacity: 0;
@@ -70,7 +71,7 @@ body {
 .card:hover .content {
     visibility: visible;
     opacity: 1;
-    margin-top: -40px;
+    margin-top: -55px;
     transition-delay: 0.3s;
 }
 

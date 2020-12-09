@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Comparision Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="slide slide1"></div>
+    <div class="slide slide2" id="slide"></div>
+</div>
+<div class="second-background"></div>
+<script type="text/javascript">
+    const slide = document.getElementById('slide')
+    window.onmousemove = function (e) {
+        const x = e.clientX
+        slide.style.left = x + 'px'
+    }
+</script>
+</body>
+</html>

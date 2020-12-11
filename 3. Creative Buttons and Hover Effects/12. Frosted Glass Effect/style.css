@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("pexels-bri-schneiter-346529.jpg") center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 5em;
+    pointer-events: none;
+    color: #ffffff;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.glass {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    pointer-events: none;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    transition: 0.2s;
+}

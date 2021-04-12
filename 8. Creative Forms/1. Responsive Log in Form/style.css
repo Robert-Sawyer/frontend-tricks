@@ -25,7 +25,7 @@ section {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(225deg, #e91e63, #03a9f4);
+    background: linear-gradient(225deg, #e91e63, #cc984f63);
     z-index: 1;
     mix-blend-mode: screen;
 }
